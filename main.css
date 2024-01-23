@@ -1,0 +1,36 @@
+tr > td {
+    font-size: 40px;
+    text-align: center;
+}
+tr > th {
+    width: 250px;
+    font-size: 30px;
+    height: 30px;
+    background-color: #9b9b9b;
+}
+header {
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0px;
+    width: 98%;
+    height: 40px;
+}
+header > h1 {
+    text-align: center;
+    margin-top: 0%;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+table {
+    background-color: #cfcfcf;
+    border-color: black;
+}
+body {
+    background-color: #bcbcbc;
+    margin-top: 5%;
+}
