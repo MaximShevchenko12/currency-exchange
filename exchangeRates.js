@@ -78,44 +78,23 @@ let rates = {
     
     const form = document.getElementById("my-form"); 
     form.addEventListener("submit", handleSubmit);
-
-
     let arr = [
-      [ '$', 'Dollar', '37.00', '37.45' ],
-      [ '&#8364', 'Euro', '40.00', '40.65' ],
-      [ '&#163', 'Pound', '46.15', '46.95' ],
-      [ '&#65509', 'Yuan', '5.05', '5.45' ],
-      [ 'z&#x142', 'Zloty', '9.20', '9.35' ],
+      { symbol: '$', currency: 'Dollar', buy: '37.00', sell: '37.45' },
+      { symbol: '&#8364', currency: 'Euro', buy: '40.00', sell: '40.65' },
+      { symbol: '&#8364', currency: 'Euro', buy: '40.00', sell: '40.65' },
+      { symbol: '&#163', currency: 'Pound', buy: '46.15', sell: '46.95' },
+      { symbol: '&#65509', currency: 'Yuan', buy: '5.05', sell: '5.45' },
+      { symbol: 'z&#x142', currency: 'Zloty', buy: '9.20', sell: '9.35' },
     ];
   
     arr.forEach(function(item) {
       let row = document.createElement('tr')
       row.innerHTML = `
-      <td>${item[0]}</td>
-      <td>${item[1]}</td>
-      <td>${item[2]}</td>
-      <td>${item[3]}</td>
+      <td>${item.symbol}</td>
+      <td>${item.currency}</td>
+      <td>${item.buy}</td>
+      <td>${item.sell}</td>
       `
       document.querySelector('table').append(row)
     });
-  })
-
-  let arr = [
-    { symbol: '$', currency: 'Dollar', buy: '37.00', sell: '37.45' },
-    { symbol: '&#8364', currency: 'Euro', buy: '40.00', sell: '40.65' },
-    { symbol: '&#8364', currency: 'Euro', buy: '40.00', sell: '40.65' },
-    { symbol: '&#163', currency: 'Pound', buy: '46.15', sell: '46.95' },
-    { symbol: '&#65509', currency: 'Yuan', buy: '5.05', sell: '5.45' },
-    { symbol: 'z&#x142', currency: 'Zloty', buy: '9.20', sell: '9.35' },
-  ];
-
-  arr.forEach(function() {
-    let row = document.createElement('tr')
-    row.innerHTML = `
-    <td>${arr[symbol]}</td>
-    <td>${arr[currency]}</td>
-    <td>${arr[buy]}</td>
-    <td>${arr[sell]}</td>
-    `
-    document.querySelector('table').append(row)
   });
