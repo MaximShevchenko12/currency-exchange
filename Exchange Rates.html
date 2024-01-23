@@ -2,8 +2,8 @@
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <script src="./js/exchangeRates.js"></script>
   <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/exchangeRates.js"></script>
   <link rel="ico" href="favicon.ico">
   <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
 <link rel="icon" href="https://obmenka24.kharkov.ua/wp-content/uploads/2022/08/xcropped-favicon-obmenka-kharkov1-32x32.png.pagespeed.ic.fHtGKBUlXX.png" sizes="32x32"/>
@@ -13,7 +13,7 @@
   <title>Exchange Rates</title>
   <body>
   <header>
-    <h1>Exchange Rates !</h1>
+   <h1>Exchange Rates</h1>
   </header>
   <h1>Currency Converter</h1>
     <form id="my-form">
@@ -41,42 +41,12 @@
       <span id="output">Total:</span>
       <span id="result"></span>
   </form>
-  <table border="1" width="100%">
+  <table border="1" id="table">
    <tr>
-    <th><p>Symbol</th></p>
-    <th><p>Currency</th></p>
-    <th><p>Buy</th></p>
-    <th><p>Sell</th></p>
-   </tr>
-   <tr>
-    <td><img src='data:image/png;base64,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' alt='dollar'> </td>
-    <td><p>Dollar</td></p>
-    <td><p>37.00</td></p>
-    <td><p>37.45</td></p>
-   </tr>
-   <tr>
-    <td> <img src="data:image/png;base64,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" alt="euro"> </td>
-    <td><p>Euro</td></p>
-    <td><p>40.00</td></p>
-    <td><p>40.65</td></p>
-   </tr>
-   <tr>
-    <td><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcAJiz2KE1IjtD9GJ83DAFub0MPwoaDJwklCOy8NWv&s' alt='pound'> </td>
-    <td><p>Pound</td></p>
-    <td><p>46.15</td></p>
-    <td><p>46.95</td></p>
-   </tr>
-   <tr>
-    <td><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGkAAACACAMAAAA/F7dCAAAAaVBMVEX///8AAAC0tLSUlJTAwMCwsLBdXV35+fn8/Pz09PR+fn7q6upCQkK4uLjl5eW7u7vf399KSkppaWnHx8cyMjJ4eHiNjY3Q0NCdnZ0KCgpRUVFxcXEhISE6OjoTExOGhoYpKSmlpaUaGhqPzbCRAAADmklEQVRoge2a6XLqMAyFDYSCkwCBsC8t9P0f8kKJskmW5TiZO9P6/GvH5suJbUl2rEZyZcoobe18Ur+PNFLxWURZb3ZxwpB2u82a/YGNUnO9sMBuk2w2N1NAc53tr/QvfESzolG+ZUDHGQtoaPZFvY9D3f3FCJrKOS9N8JPObS0K424gpdJm/+sBtTCgHq6kY6N7uiSaxCQpciXl9d5ner6SU3DhQ0o13WZJkSaupGltjIwrcEqQLq6k2iBQY1SIWuaCNdtQNfe4IabeX+4GysqOMdtu7/36ykl+tzQkTDFvm9BW2i3HpC8XUNn/aG36gVFMtkCCNXmzN00wiR/ahg7QB0c7LGJSMMm2JbC0kzSe4Wy2kYJglE6yF77ApiTv4iVYtfbp8BaOFMIkFRXNt9IsfUAkoSlYS2MhSCmc6kWmVkXjVB4qlyeEkkS/76LtSgyiZnpq7wQzae0S/fUdoey597ODJaUeiLS1dYE06mTpWY+mCGWr+7pZqpZGpU++A1hymHiFcKHELvw5tHK1RC5f7mkh1bpbUmqDSExBpruO0ksZIo0MdaLys0RVz8Y872WJzL4mU7B7EOR0tn8lQ55P/Cw9sy82RZdWsBG0xhGjHohElpll6O9qSVV5oBJVvMDUuXcHESUFUbyUy8F5q1UX3tPjPA8Z+tsHRBTPKM/3Y4mqk9qmIGpd/UBEoF03G5SW5AWRQTjQNrd6sGPwtURtExtRtPTsOUov4ZOgep6HhHn3B6kEFX/bKtD2aal9PPNSdcIDU7N7xKtLo23OFUyVy8174r2FD0Qgz9+Kv2+dUi0WLv6+3zuxslTryVK1iai0//k/RMVu1QMpVPz9bC/LB+jNEhWTXnketgmpw0GtVTgmZWo8gCWq+LsomPy9WlJqh0aqjFK9WiKLv0K3fi2RRy+DWHou308aJNgAU0pWkUm54StBnBu7RCvzisY7QT+ZhzCQAul/kbL9hNPx1vqlDdt8su+eIdtH3L3UXiKS4zfEQAqkQGJI3WuI5XTMadXeCsQLtv00ZPdA+suk5XjBKULracW2Z9aTTf3FCFfSb4ywgRRIgRRIgRRIgTSM2rWR9FaWu1qg4qPDAEL31c9DkcZtEnM3w0/44+5AA0Xc9hzGlKZOzMXXFR2U0Df4d31/bFARvivx1lp+31MgHRHXZCtbhx58aa2X+fFi8gPaxo9DorUP0EJoyeGK7p8gffHH1K1Da/ao+R8ofC7MdQ5WcAAAAABJRU5ErkJggg==' alt='yuan'> </td>
-    <td><p>Yuan</td></p>
-    <td><p>5.05</td></p>
-    <td><p>5.45</td></p>
-   </tr>
-   <tr>
-    <td><img src='data:image/png;base64,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' alt='zloty'> </td>
-    <td><p>Zloty</td></p>
-    <td><p>9.20</td></p>
-    <td><p>9.35</td></p>
+    <th><p>symbol</th></p>
+    <th><p>currency</th></p>
+    <th><p>buy</th></p>
+    <th><p>sell</th></p>
    </tr>
   </table>
    <footer>
