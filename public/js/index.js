@@ -81,7 +81,6 @@ let rates = {
     let arr = [
       { symbol: '$', currency: 'Dollar', buy: '37.00', sell: '37.45' },
       { symbol: '&#8364', currency: 'Euro', buy: '40.00', sell: '40.65' },
-      { symbol: '&#8364', currency: 'Euro', buy: '40.00', sell: '40.65' },
       { symbol: '&#163', currency: 'Pound', buy: '46.15', sell: '46.95' },
       { symbol: '&#65509', currency: 'Yuan', buy: '5.05', sell: '5.45' },
       { symbol: 'z&#x142', currency: 'Zloty', buy: '9.20', sell: '9.35' },
