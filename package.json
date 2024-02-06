@@ -1,0 +1,16 @@
+{
+  "name": "max",
+  "version": "0.0.1",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node --experimental-modules server.js"
+  },
+  "author": "max",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mime": "^4.0.1",
+    "mime-types": "^2.1.35"
+  }
+}
