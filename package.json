@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "mime": "^4.0.1",
     "mime-types": "^2.1.35"
   }
 }
