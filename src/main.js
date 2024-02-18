@@ -28,27 +28,35 @@
 
 const express = require('express')
 const app = express()
+const path = require('path')
+const rates = require('./rates.json');
 
 app.use('/public', express.static('public'));
 
+app.get('/api/v1/rates', (req, res) => {
+    res.json(rates)
+    res.sendFile(path.join(__dirname, 'rates.json'))
+    console.log(rates)
+})
+
 app.get('/index.html', (req, res) => {
     res.status(200)
-    res.sendFile('C:/www/currency-exchange/public/index.html') //основная страница
+    res.sendFile(path.join(__dirname, '../public', 'index.html'))
 })
 
 app.get('/css/main.css', (req, res) => {
     res.status(200)
-    res.sendFile('C:/www/currency-exchange/public/css/main.css')
+    res.sendFile(path.join(__dirname, '../public/css', 'main.css'))
 })
 
 app.get('/js/index.js', (req, res) => {
     res.status(200)
-    res.sendFile('C:/www/currency-exchange/public/js/index.js')
+    res.sendFile(path.join(__dirname, '../public/js', 'index.js'))
 })
 
 app.use((req, res) => {
     res.status(404)
-    res.sendFile('C:/www/currency-exchange/public/404.html') //страница 404
+    res.sendFile(path.join(__dirname, '../public', '404.html'))
 })
 
 const PORT = 3000
