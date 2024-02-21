@@ -1,4 +1,4 @@
-let rates = {
+rates = {
     UAH: {
         UAH: 1,
         USD: 0.026,
