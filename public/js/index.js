@@ -40,10 +40,9 @@ rates = {};
     let text = d.toLocaleString();
     document.getElementById("demo").innerHTML = text;
 
+    function xhrCall() {
     const form = document.getElementById("my-form"); 
     form.addEventListener("submit", handleSubmit);
-
-    let interval = setInterval(() => {
     const url = 'http://localhost:3000/api/v1/currencies';
     const xhr = new XMLHttpRequest();
     xhr.open('GET', url,);
@@ -63,27 +62,9 @@ rates = {};
       });
     }
     xhr.send();
-  }, 60000)
+  }
+    let interval = setInterval(xhrCall, 60000)
 
-  const url = 'http://localhost:3000/api/v1/currencies';
-    const xhr = new XMLHttpRequest();
-    xhr.open('GET', url,);
-    xhr.onload = () => {
-      console.log(xhr.response);
-      arr = JSON.parse(xhr.responseText);
-
-      arr.forEach(function(item) {
-        let row = document.createElement('tr');
-        row.innerHTML = `
-        <td>${item.symbol}</td>
-        <td>${item.currency}</td>
-        <td>${item.buy}</td>
-        <td>${item.sell}</td>
-        `
-        document.querySelector('table').append(row);
-      });
-    }
-    xhr.send();
-    
+    xhrCall()
   });
 
