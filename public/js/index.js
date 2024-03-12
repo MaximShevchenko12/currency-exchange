@@ -75,5 +75,5 @@ window.addEventListener("load", function () {
       arr = JSON.parse(xhr.responseText);
     };
     xhr.send();
-  }, 6000);
+  }, 60000);
 });
