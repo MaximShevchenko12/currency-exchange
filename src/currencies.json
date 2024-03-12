@@ -1,0 +1,7 @@
+[
+  { "symbol": "$", "currency": "Dollar", "buy": "37.5", "sell": "38.7" },
+  { "symbol": "€", "currency": "Euro", "buy": "40.5", "sell": "42.3" },
+  { "symbol": "£", "currency": "Pound", "buy": "48.5", "sell": "49.1" },
+  { "symbol": "¥", "currency": "Yuan", "buy": "4.9", "sell": "5.4" },
+  { "symbol": "zł", "currency": "Zloty", "buy": "9.6", "sell": "9.7" }
+]
