@@ -3,6 +3,18 @@ const app = express();
 const path = require("path");
 const rates = require("./rates.json");
 const currencies = require("./currencies.json");
+const mysql = require("mysql");
+
+let con = mysql.createConnection({
+  host: "localhost",
+  user: "root",
+  password: "Timpompei12$",
+});
+
+con.connect(function (err) {
+  if (err) throw err;
+  console.log("Connected!");
+});
 
 app.use("/public", express.static("public"));
 
